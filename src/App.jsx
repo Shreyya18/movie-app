@@ -4,7 +4,8 @@ import SearchIcon from "./search.svg";
 import MovieCard from "./MovieCard";
 
 // fd94b136
-const API_URL = "http://www.omdbapi.com?apikey=fd94b136";
+const API_URL = `http://www.omdbapi.com?apikey=${import.meta.env.VITE_OMDB_API_KEY}`;
+console.log('API Key:', import.meta.env.VITE_OMDB_API_KEY);
 
 
 const App = () => {
